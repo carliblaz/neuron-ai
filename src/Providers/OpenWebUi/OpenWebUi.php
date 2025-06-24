@@ -33,8 +33,8 @@ class OpenWebUi implements AIProviderInterface
 
     public function __construct(
         protected string $url, // http://localhost:11434/api
-        protected string $model,
         protected string $key,
+        protected string $model,
         protected array $parameters = [],
     ) {
         $this->client = new Client([
